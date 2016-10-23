@@ -568,7 +568,7 @@
       it('should use recursion by calling self', function () {
         var originalGcd = gcd;
         gcd = sinon.spy(gcd);
-        gcd(17, 5);
+        gcd(15, 5);
         expect(gcd.callCount).to.be.above(1);
         gcd = originalGcd;
       });

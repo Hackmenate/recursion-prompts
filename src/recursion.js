@@ -192,8 +192,7 @@ var gcd = function(x, y) {
     return 1;
   } else {
     var divisor = 2;
-    while (divisor <= x && divisor <= y && x%divisor !== 0 && y%divisor !== 0) {
-      console.log(divisor);
+    while (divisor <= x && divisor <= y) {
       if (x%divisor === 0 && y%divisor === 0) {
         return divisor * gcd(x/divisor, y/divisor);
       }
